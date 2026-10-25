@@ -92,9 +92,9 @@ docker compose logs -f roomcast
 With [uv](https://docs.astral.sh/uv/):
 ```bash
 ROOMCAST_DEFAULT_ROOM=Kitchen ROOMCAST_TOKEN=$(openssl rand -hex 32) \
-    uvx --from git+https://github.com/samoturk/roomcast-mcp roomcast-mcp
+    uvx roomcast-mcp
 ```
-or `uv tool install git+https://github.com/samoturk/roomcast-mcp` for a permanent install. On macOS, allow "Local Network"
+or `uv tool install roomcast-mcp` (or `pipx install roomcast-mcp`) for a permanent install. On macOS, allow "Local Network"
 access for your terminal when asked, or discovery finds nothing.
 
 ### Connecting a client
@@ -110,7 +110,7 @@ Pick the setup that matches the client:
   over stdio, no network at all:
   ```json
   { "mcpServers": { "roomcast": { "command": "uvx",
-      "args": ["--from", "git+https://github.com/samoturk/roomcast-mcp", "roomcast-mcp", "--stdio"],
+      "args": ["roomcast-mcp", "--stdio"],
       "env": { "ROOMCAST_DEFAULT_ROOM": "Kitchen" } } } }
   ```
 - **claude.ai and the Claude mobile app**: custom connectors connect from Anthropic's servers
