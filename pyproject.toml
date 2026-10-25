@@ -16,7 +16,7 @@ classifiers = [
     "Topic :: Multimedia :: Sound/Audio :: Players",
 ]
 dependencies = [
-    "mcp>=1.27.2,<2",
+    "mcp>=1.27.2,<3",
     "soco>=0.30",
     "httpx>=0.28",
     "pychromecast>=14",
