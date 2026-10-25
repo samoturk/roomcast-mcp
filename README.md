@@ -1,3 +1,8 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/samoturk/roomcast-mcp/main/assets/banner-dark.svg">
+  <img alt="roomcast: let your AI assistant play podcasts, radio and playlists on the speakers in your home" src="https://raw.githubusercontent.com/samoturk/roomcast-mcp/main/assets/banner-light.svg">
+</picture>
+
 # roomcast-mcp
 
 An MCP server that plays audio on the speakers in your home: Sonos, Google Cast (Chromecast,
