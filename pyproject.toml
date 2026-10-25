@@ -1,0 +1,53 @@
+[project]
+name = "roomcast-mcp"
+version = "0.1.0"
+description = "MCP server that plays audio URLs and playlists on Sonos, Google Cast and DLNA speakers"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Samo Turk" }]
+requires-python = ">=3.11"
+keywords = ["mcp", "sonos", "chromecast", "dlna", "upnp", "speakers", "podcast", "claude"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Sound/Audio :: Players",
+]
+dependencies = [
+    "mcp>=1.27.2,<2",
+    "soco>=0.30",
+    "httpx>=0.28",
+    "pychromecast>=14",
+    "async-upnp-client>=0.44",
+]
+
+[project.urls]
+Repository = "https://github.com/samoturk/roomcast-mcp"
+
+[project.scripts]
+roomcast-mcp = "roomcast.server:main"
+
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/roomcast"]
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.14"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["roomcast"]
