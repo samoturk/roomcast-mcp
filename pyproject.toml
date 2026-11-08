@@ -1,6 +1,6 @@
 [project]
 name = "roomcast-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "MCP server that plays audio URLs and playlists on Sonos, Google Cast and DLNA speakers"
 readme = "README.md"
 license = "MIT"
