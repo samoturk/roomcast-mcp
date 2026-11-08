@@ -1,5 +1,5 @@
 version = 1
-revision = 3
+revision = 5
 requires-python = ">=3.11"
 resolution-markers = [
     "python_full_version >= '3.14' and sys_platform == 'win32'",
@@ -1290,16 +1290,16 @@ wheels = [
 
 [[package]]
 name = "pychromecast"
-version = "14.0.10"
+version = "14.1.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "casttube" },
     { name = "protobuf" },
     { name = "zeroconf" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/3a/1f/d78497441334d24740cce0a92394c33972a9d6a17b607d0ec976f0f48a35/pychromecast-14.0.10.tar.gz", hash = "sha256:f05a1c8d727d4f104c8c731688053033e05157f2ab81bc8eef50ec0c62f9373c", size = 61588, upload-time = "2026-03-07T16:37:42.833Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/74/c9/53bd2ccabbc5b8e57c31222320263fe4c822d1988d6632ffcbda56620100/pychromecast-14.1.1.tar.gz", hash = "sha256:9b75553770c8007bc146ca7b5ad30dd165c71bb1335a0ea6659a514087a63c67", size = 73841, upload-time = "2026-11-03T07:21:22.083Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/1f/61/f0f176622e2b4df06318a3abb2a27cc4c2fee8d40d7a0db8d60034785c09/pychromecast-14.0.10-py2.py3-none-any.whl", hash = "sha256:f5ea52b1db0edc3019ec72c9f5354c7e77c2564ecd44f809a6d2f4f518a02e67", size = 77467, upload-time = "2026-03-07T16:37:41.527Z" },
+    { url = "https://files.pythonhosted.org/packages/56/ed/46dfe384d86f4dbdcbb19505bbbf39aea686a6507db9984e735544e4c6a9/pychromecast-14.1.1-py2.py3-none-any.whl", hash = "sha256:c7a4f56790b3b4c3790baf7426a0ee9345a0bf082effe485b1f23eb049f1ca54", size = 80311, upload-time = "2026-11-03T07:21:20.984Z" },
 ]
 
 [[package]]
