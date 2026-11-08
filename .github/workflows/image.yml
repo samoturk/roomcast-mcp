@@ -4,6 +4,10 @@ on:
   push:
     branches: [main]
     tags: ["v*"]
+  # Picks up Alpine and Python fixes between commits; edge only, a release still needs a tag.
+  schedule:
+    - cron: "17 4 * * 1"
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -39,3 +43,5 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
+          # A cached `apk upgrade` layer would keep last week's packages.
+          no-cache: ${{ github.event_name != 'push' }}
