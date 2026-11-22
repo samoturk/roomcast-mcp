@@ -1,5 +1,5 @@
 version = 1
-revision = 3
+revision = 5
 requires-python = ">=3.11"
 resolution-markers = [
     "python_full_version >= '3.14' and sys_platform == 'win32'",
@@ -1789,7 +1789,7 @@ wheels = [
 
 [[package]]
 name = "soco"
-version = "0.32.0"
+version = "0.32.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "appdirs" },
@@ -1798,9 +1798,9 @@ dependencies = [
     { name = "requests" },
     { name = "xmltodict" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ae/0b/b3ead49f32989933b8a4e1be7f0b35785fa1fd47b90715a55f25c20a71f5/soco-0.32.0.tar.gz", hash = "sha256:b2896b1a98d65828cc11bbb372b3424e06fb1f943671a3ab793d9423317a0d63", size = 775242, upload-time = "2026-10-15T15:59:26.153Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/6b/6c/ad5b832e556ffbcca60ee7f89fd5ecb751749ce8362eca4336650c5374cb/soco-0.32.3.tar.gz", hash = "sha256:398a3b03a129721bf101cce008c33879cb1c5046f8d16a4f145d4a03fa92cb8c", size = 777050, upload-time = "2026-11-17T08:48:22.058Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/bf/c7/23e88d5bd50f384ced1482c39dee3114bec2822791ba56f1213d4fe31742/soco-0.32.0-py3-none-any.whl", hash = "sha256:94d11ac91dde91f348326b2150d9aaaaf6e5204faa97a5c4ba28dbce50275faa", size = 172297, upload-time = "2026-10-15T15:59:24.208Z" },
+    { url = "https://files.pythonhosted.org/packages/25/df/b77988d02964f58fc137063f58ea23da7cb690dec5541aea3a2fb691018a/soco-0.32.3-py3-none-any.whl", hash = "sha256:df4b08ee926ba34b1ea2385e7f08bb8a466988b1190b3bba3128864268ad692f", size = 173473, upload-time = "2026-11-17T08:48:20.019Z" },
 ]
 
 [[package]]
